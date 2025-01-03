@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* styles.css or your custom stylesheet */
+.react-calendar__tile.highlight {
+    background-color: teal !important; /* Highlight color */
+    color: white;
+    font-weight: bold;
+  }
