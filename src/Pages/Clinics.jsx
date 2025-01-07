@@ -23,6 +23,8 @@ const Clinics = () => {
   return (
     <div>
         {/* Navbar */}
+      <div className="sticky top-0">
+
         <nav className="bg-white flex flex-col">
         <div className="text-center p-2">
           <span className="text-lg lg:text-4xl text-blue-800 font-semibold p-2">
@@ -37,6 +39,7 @@ const Clinics = () => {
             <h1>Making you better</h1>
         </div>
       </nav>
+      </div>
 
     <div className="container mx-auto p-4">
       {/* Search Bar with Filters */}

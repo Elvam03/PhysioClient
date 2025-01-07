@@ -52,6 +52,8 @@ const Library = () => {
     <div>
 
       {/* Navbar */}
+      <div className="sticky top-0">
+
       <nav className="bg-white flex flex-col">
         <div className="text-center p-2">
           <span className="text-lg lg:text-4xl text-blue-800 font-semibold p-2">
@@ -66,7 +68,7 @@ const Library = () => {
             <h1>Making you better</h1>
         </div>
       </nav>
-
+</div>
     <div className="p-6 min-h-screen bg-gray-100 text-black">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-6">

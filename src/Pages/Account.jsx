@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 function Account() {
   const [modalOpen, setModalOpen] = useState(false);
   const [profileData, setProfileData] = useState({
-    name: "John Doe",
+    name: "",
     age: "",
-    email: "john@example.com",
+    email: "",
     phone: "",
     location: "",
   });
@@ -37,6 +37,7 @@ function Account() {
   return (
     <section className="min-h-screen bg-gray-100 pb-2">
       {/* Navbar */}
+      <div className="sticky top-0 z-10">
       <nav className="bg-white flex flex-col">
         <div className="text-center p-2">
           <span className="text-lg lg:text-4xl text-blue-800 font-semibold p-2">
@@ -51,6 +52,9 @@ function Account() {
             <h1>Making you better</h1>
         </div>
       </nav>
+
+      </div>
+     
 
       {/* Profile Section */}
       <div className="min-h-screen bg-gray-100">
@@ -69,7 +73,7 @@ function Account() {
               <div className="flex flex-col items-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden">
                   <img
-                    src="./src/assets/profile img.jpg"
+                    src="./src/assets/noprofile.png"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
@@ -87,13 +91,13 @@ function Account() {
                   <strong>Email:</strong> {profileData.email}
                 </p>
                 <p>
-                  <strong>Age:</strong> {profileData.age || "Not set"}
+                  <strong>Age:</strong> {profileData.age}
                 </p>
                 <p>
-                  <strong>Phone:</strong> {profileData.phone || "Not set"}
+                  <strong>Phone:</strong> {profileData.phone}
                 </p>
                 <p>
-                  <strong>Location:</strong> {profileData.location || "Not set"}
+                  <strong>Location:</strong> {profileData.location}
                 </p>
               </div>
               <div className="mt-6">

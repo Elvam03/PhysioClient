@@ -56,8 +56,10 @@ const Schedule = () => {
   };
 
   return (
-    <div>
+    <div className="">
          {/* Navbar */}
+      <div className="sticky top-0">
+
          <nav className="bg-white flex flex-col">
                 <div className="text-center p-2">
                     <span className="text-lg lg:text-4xl text-blue-800 font-semibold p-2">
@@ -72,6 +74,7 @@ const Schedule = () => {
                     <h1>Making you better</h1>
                 </div>
             </nav>
+            </div>
     <div className="flex justify-center items-center h-full bg-gray-100">
       <div className="p-6 w-full max-w-4xl">
         <h1 className="text-4xl font-bold mb-4 text-center text-gray-600">My Schedule</h1>

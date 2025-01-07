@@ -30,8 +30,9 @@ function Progress() {
     };
 
     return (
-        <div>
+        <div className="">
             {/* Navbar */}
+            <div className="sticky top-0">
             <nav className="bg-white flex flex-col">
                 <div className="text-center p-2">
                     <span className="text-lg lg:text-4xl text-blue-800 font-semibold p-2">
@@ -46,6 +47,8 @@ function Progress() {
                     <h1>Making you better</h1>
                 </div>
             </nav>
+            </div>
+            
 
 
             <div className="bg-gray-100">
