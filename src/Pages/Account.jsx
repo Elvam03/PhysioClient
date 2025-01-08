@@ -73,7 +73,7 @@ function Account() {
               <div className="flex flex-col items-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden">
                   <img
-                    src="./assets/noprofile.png"
+                    src="/assets/noprofile.png"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
