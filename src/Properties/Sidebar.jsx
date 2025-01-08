@@ -43,7 +43,7 @@ function Sidebar() {
         className="fixed top-4 left-4 bg-gray-200 p-2 rounded-md shadow-md z-50"
         onClick={() => setOpen(!open)} // Toggle sidebar visibility
       >
-        <img src="/src/assets/menu.png" alt="Menu" className="w-6 h-6" />
+        <img src="/Images/menu.png" alt="Menu" className="w-6 h-6" />
       </button>
 
       {/* Sidebar */}
@@ -56,7 +56,7 @@ function Sidebar() {
         {/* Logo and Title */}
         <div className="flex gap-x-4 items-center mt-14">
           <img
-            src="/src/assets/Untitled design3.png"
+            src="/Images/Untitled design3.png"
             alt="Logo"
             className="h-10 w-10"
           />
@@ -86,7 +86,7 @@ function Sidebar() {
                 onClick={() => setOpen(false)} // Close sidebar on link click
               >
                 <img
-                  src={`/src/assets/${menu.src}.png`}
+                  src={`/Images/${menu.src}.png`}
                   className="h-6 w-6 shrink-0"
                   alt={`${menu.title} Icon`}
                 />

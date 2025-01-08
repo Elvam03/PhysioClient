@@ -7,20 +7,20 @@ const Library = () => {
   const popupRef = useRef(null);
 
   const featuredExercises = [
-    { id: 1, name: 'Push-Up', description: 'A basic upper-body exercise.', image: './src/assets/push ups.jpg' },
-    { id: 2, name: 'Squat', description: 'Strengthens the legs and core.', image: './src/assets/squat.jpg' },
-    { id: 3, name: 'Plank', description: 'Core stability exercise.', image: './src/assets/plank.jpg' },
+    { id: 1, name: 'Push-Up', description: 'A basic upper-body exercise.', image: '/Images/push ups.jpg' },
+    { id: 2, name: 'Squat', description: 'Strengthens the legs and core.', image: '/Images/squat.jpg' },
+    { id: 3, name: 'Plank', description: 'Core stability exercise.', image: '/Images/plank.jpg' },
   ];
 
   const allExercises = [
-    { id: 4, name: 'Lunge', target: 'Legs', description: 'Improves balance and leg strength.', image: './src/assets/lunge.jpg' },
-    { id: 5, name: 'Bicep Curl', target: 'Arms', description: 'Strengthens the biceps.', image: './src/assets/bicep curl.jpg' },
-    { id: 6, name: 'Deadlift', target: 'Back', description: 'Improves posture and back strength.', image: './src/assets/deadlift.jpg' },
-    { id: 7, name: 'Burpee', target: 'Full Body', description: 'High-intensity exercise for overall strength.', image: './src/assets/burpee.jpg' },
-    { id: 8, name: 'Mountain Climber', target: 'Core', description: 'Engages the core and legs.', image: './src/assets/mountain.jpeg' },
-    { id: 9, name: 'Jumping Jack', target: 'Full Body', description: 'Cardio exercise to improve stamina.', image: './src/assets/jumping.jpg' },
-    { id: 10, name: 'Pull-Up', target: 'Arms', description: 'Strengthens upper body muscles.', image: './src/assets/pull up.jpg' },
-    { id: 11, name: 'Leg Raise', target: 'Abs', description: 'Strengthens the lower abdominal muscles.', image: './src/assets/leg raises.jpeg' },
+    { id: 4, name: 'Lunge', target: 'Legs', description: 'Improves balance and leg strength.', image: '/Images/lunge.jpg' },
+    { id: 5, name: 'Bicep Curl', target: 'Arms', description: 'Strengthens the biceps.', image: '/Images/bicep curl.jpg' },
+    { id: 6, name: 'Deadlift', target: 'Back', description: 'Improves posture and back strength.', image: '/Images/deadlift.jpg' },
+    { id: 7, name: 'Burpee', target: 'Full Body', description: 'High-intensity exercise for overall strength.', image: '/Images/burpee.jpg' },
+    { id: 8, name: 'Mountain Climber', target: 'Core', description: 'Engages the core and legs.', image: '/Images/mountain.jpeg' },
+    { id: 9, name: 'Jumping Jack', target: 'Full Body', description: 'Cardio exercise to improve stamina.', image: '/Images/jumping.jpg' },
+    { id: 10, name: 'Pull-Up', target: 'Arms', description: 'Strengthens upper body muscles.', image: '/Images/pull up.jpg' },
+    { id: 11, name: 'Leg Raise', target: 'Abs', description: 'Strengthens the lower abdominal muscles.', image: '/Images/leg raises.jpeg' },
   ];
 
   const handleBookmark = (exercise) => {
