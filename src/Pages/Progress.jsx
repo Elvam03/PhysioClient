@@ -30,7 +30,7 @@ function Progress() {
     };
 
     return (
-        <div className="">
+        <div className="max-w-screen overflow-hidden">
             {/* Navbar */}
             <div className="sticky top-0">
             <nav className="bg-white flex flex-col">

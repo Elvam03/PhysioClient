@@ -123,7 +123,7 @@ function Account() {
       {/* Modal */}
       {modalOpen && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
-          <div className="bg-white w-96 p-2 md:p-6 rounded-lg shadow-lg">
+          <div className="bg-gray-100 w-96 p-2 md:p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               Update Profile
             </h2>
