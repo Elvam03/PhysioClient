@@ -61,7 +61,7 @@ function Account() {
         <div
           className="relative bg-cover bg-center h-64"
           style={{
-            backgroundImage: "url('./src/assets/Background img.jpg')",
+            backgroundImage: "url('../src/assets/Background img.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-60"></div>
@@ -73,7 +73,7 @@ function Account() {
               <div className="flex flex-col items-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden">
                   <img
-                    src="./src/assets/noprofile.png"
+                    src="/src/assets/noprofile.png"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
@@ -123,7 +123,7 @@ function Account() {
       {/* Modal */}
       {modalOpen && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
-          <div className="bg-white w-96 p-6 rounded-lg shadow-lg">
+          <div className="bg-white w-96 p-2 md:p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               Update Profile
             </h2>
