@@ -61,7 +61,7 @@ function Account() {
         <div
           className="relative bg-cover bg-center h-64"
           style={{
-            backgroundImage: "url('../src/assets/Background img.jpg')",
+            backgroundImage: "url('../assets/Background img.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-60"></div>
@@ -73,7 +73,7 @@ function Account() {
               <div className="flex flex-col items-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden">
                   <img
-                    src="/src/assets/noprofile.png"
+                    src="./assets/noprofile.png"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
