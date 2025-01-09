@@ -84,12 +84,12 @@ const Library = () => {
       {/* Featured Carousel */}
       <div className="mb-6">
         <h2 className="text-xl font-bold mb-4">Featured Exercises</h2>
-        <div className="flex overflow-x-auto gap-4">
+        <div className="md:flex md:overflow-x-auto gap-2 md:gap-4 grid grid-cols-1">
           {featuredExercises.map((exercise) => (
             <div
               key={exercise.id}
               onClick={() => setSelectedExercise(exercise)}
-              className="flex-shrink-0 w-64 p-4 bg-white shadow-md rounded-lg cursor-pointer">
+              className="flex-shrink-0 w-38 md:w-64 p-4 bg-white shadow-md rounded-lg cursor-pointer">
               <img
                 src={exercise.image}
                 alt={exercise.name}

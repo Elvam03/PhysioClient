@@ -108,9 +108,9 @@ const Schedule = () => {
         </div>
 
         {/* To-Do List */}
-        <div className="bg-white rounded-lg shadow-lg h-full p-5">
+        <div className="bg-white rounded-lg shadow-lg h-screen max-h-60 p-5">
           <h2 className="text-xl font-semibold mb-2 text-center text-teal-500">To-Do List</h2>
-          <h1 className="text-gray-500">This is my to-do list:</h1>
+          <h1 className="text-gray-500 pb-6">This is my to-do list:</h1>
           <ul className="list-none">
             {todoList.map((todo, index) => (
               <li key={index} className="flex justify-between items-center mb-2">

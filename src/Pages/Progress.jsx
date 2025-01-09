@@ -30,31 +30,31 @@ function Progress() {
     };
 
     return (
-        <div className="max-w-screen overflow-hidden">
+        <div className="">
             {/* Navbar */}
             <div className="sticky top-0">
-            <nav className="bg-white flex flex-col">
-                <div className="text-center p-2">
-                    <span className="text-lg lg:text-4xl text-blue-800 font-semibold p-2">
-                        PhysioCare
-                    </span>
-                    <span className="text-lg lg:text-4xl text-teal-500 font-semibold">
-                        Network
-                    </span>
+                <nav className="bg-white flex flex-col">
+                    <div className="text-center p-2">
+                        <span className="text-lg lg:text-4xl text-blue-800 font-semibold p-2">
+                            PhysioCare
+                        </span>
+                        <span className="text-lg lg:text-4xl text-teal-500 font-semibold">
+                            Network
+                        </span>
 
-                </div>
-                <div className="text-center text-gray-400 pb-2 text-sm md:text-md">
-                    <h1>Making you better</h1>
-                </div>
-            </nav>
+                    </div>
+                    <div className="text-center text-gray-400 pb-2 text-sm md:text-md">
+                        <h1>Making you better</h1>
+                    </div>
+                </nav>
             </div>
-            
 
 
-            <div className="bg-gray-100">
+
+            <div className="bg-gray-100 max-w-screen">
                 {/* My progress */}
                 <div>
-                    <div className="bg-gray-100 mb-5 p-5">
+                    <div className="mb-5 p-5">
                         <h2 className="text-2xl font-bold text-gray-800">My Progress</h2>
                         <p className="text-gray-600 mt-2">
                             Below is a list of videos you have watched or completed.
@@ -95,7 +95,7 @@ function Progress() {
 
 
                 {/* My Health Section */}
-                <section className="bg-gray-100 mb-5 p-6">
+                <section className="mb-5 p-6">
                     <h2 className="text-2xl font-bold text-gray-800">My Health</h2>
                     <p className="text-gray-600 mt-2">Track your health and calculate BMI.</p>
                     <div className="mt-6 space-y-4">
@@ -131,7 +131,7 @@ function Progress() {
 
 
                 {/* My Goals Section */}
-                <div className="bg-gray-100 mb-5 p-6">
+                <div className="mb-5 p-6">
                     <h2 className="text-2xl font-bold text-gray-800">My Goals</h2>
                     <p className="text-gray-600">
                         Set and track your personal fitness goals.
@@ -159,32 +159,32 @@ function Progress() {
                 </div>
 
                 {/* My Achievements Section */}
-      <section className="bg-white p-6 mb-5">
-        <h2 className="text-2xl font-bold text-gray-800">My Achievements</h2>
-        <p className="text-gray-600 mt-2">
-          Celebrate your achievements with medals!
-        </p>
-        <div className="mt-6 flex space-x-4">
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white text-lg font-bold">
-              🥇
-            </div>
-            <p className="text-sm mt-2">Gold Medal</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center text-white text-lg font-bold">
-              🥈
-            </div>
-            <p className="text-sm mt-2">Silver Medal</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-orange-400 rounded-full flex items-center justify-center text-white text-lg font-bold">
-              🥉
-            </div>
-            <p className="text-sm mt-2">Bronze Medal</p>
-          </div>
-        </div>
-      </section>
+                <section className="bg-white p-6 mb-5">
+                    <h2 className="text-2xl font-bold text-gray-800">My Achievements</h2>
+                    <p className="text-gray-600 mt-2">
+                        Celebrate your achievements with medals!
+                    </p>
+                    <div className="mt-6 flex space-x-4">
+                        <div className="flex flex-col items-center">
+                            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white text-lg font-bold">
+                                🥇
+                            </div>
+                            <p className="text-sm mt-2">Gold Medal</p>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <div className="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center text-white text-lg font-bold">
+                                🥈
+                            </div>
+                            <p className="text-sm mt-2">Silver Medal</p>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <div className="w-12 h-12 bg-orange-400 rounded-full flex items-center justify-center text-white text-lg font-bold">
+                                🥉
+                            </div>
+                            <p className="text-sm mt-2">Bronze Medal</p>
+                        </div>
+                    </div>
+                </section>
 
             </div>
 

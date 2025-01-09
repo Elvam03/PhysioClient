@@ -24,7 +24,7 @@ const Community = () => {
       </nav>
       </div>
 
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 bg-gray-100 h-screen">
       {/* Tabs */}
       <div className="flex border-b-2 border-gray-300 mb-4">
         <button
@@ -35,7 +35,7 @@ const Community = () => {
               : "text-gray-600"
           }`}
         >
-          Community Forum
+          Forum
         </button>
         <button
           onClick={() => setActiveTab("library")}
@@ -45,7 +45,7 @@ const Community = () => {
               : "text-gray-600"
           }`}
         >
-          Resource Library
+          Library
         </button>
         <button
           onClick={() => setActiveTab("blog")}

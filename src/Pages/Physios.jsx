@@ -7,20 +7,32 @@ const Physios = () => {
     { name: "Sports Therapy", id: "sports" },
     { name: "Rehabilitation", id: "rehab" },
     { name: "Pain Management", id: "pain" },
+    { name: "Fitness", id: "fitness" },
+    { name: "Weight Management", id: "weight" },
+
+
   ];
 
   const physiotherapists = {
     sports: [
-      { name: "John Doe", location: "New York, NY", rating: 4.8, bio: "Specializes in sports injuries and rehabilitation." },
-      { name: "Emily Brown", location: "Los Angeles, CA", rating: 4.6, bio: "Focuses on athletic performance and recovery." },
+      { name: "John Doe", location: "Nairobi", rating: 4.8, bio: "Specializes in sports injuries and rehabilitation." },
+      { name: "Emily Brown", location: "Nakuru", rating: 4.6, bio: "Focuses on athletic performance and recovery." },
     ],
     rehab: [
-      { name: "Jane Smith", location: "Chicago, IL", rating: 4.7, bio: "Expert in post-surgery rehabilitation." },
-      { name: "Tom Wilson", location: "Miami, FL", rating: 4.5, bio: "Skilled in mobility restoration and strength training." },
+      { name: "Jane Smith", location: "Kisumu", rating: 4.7, bio: "Expert in post-surgery rehabilitation." },
+      { name: "Tom Wilson", location: "Eldoret", rating: 4.5, bio: "Skilled in mobility restoration and strength training." },
     ],
     pain: [
-      { name: "Alex Johnson", location: "Houston, TX", rating: 4.9, bio: "Expert in managing chronic pain using modern techniques." },
-      { name: "Samantha Lee", location: "San Francisco, CA", rating: 4.4, bio: "Treats pain through manual therapy and dry needling." },
+      { name: "Alex Johnson", location: "Kijabe", rating: 4.9, bio: "Expert in managing chronic pain using modern techniques." },
+      { name: "Samantha Lee", location: "Kisii", rating: 4.4, bio: "Treats pain through manual therapy and dry needling." },
+    ],
+    fitness: [
+      { name: "Tyler James", location: "Kakamega", rating: 4.9, bio: "Expert in managing chronic pain using modern techniques." },
+      { name: "Charlotte Holmes", location: "Mombasa", rating: 4.4, bio: "Treats pain through manual therapy and dry needling." },
+    ],
+    weight: [
+      { name: "David M.", location: "Machakos", rating: 4.9, bio: "Expert in managing chronic pain using modern techniques." },
+      { name: "Noel Samuels", location: "Lamu", rating: 4.4, bio: "Treats pain through manual therapy and dry needling." },
     ],
   };
 
@@ -47,44 +59,46 @@ const Physios = () => {
       </nav>
       </div>
 
-      <div className="container mx-auto p-4">
-      {/* Specialty Filters */}
-      <div className="flex space-x-4 mb-6">
-        {specialties.map((specialty) => (
-          <button
-            key={specialty.id}
-            onClick={() => setSelectedSpecialty(specialty.id)}
-            className={`px-4 py-2 border rounded-lg ${
-              selectedSpecialty === specialty.id
-                ? "bg-blue-600 text-white"
-                : "bg-white text-blue-600"
-            }`}
-          >
-            {specialty.name}
-          </button>
-        ))}
-      </div>
+      <div className="container mx-auto p-4 bg-gray-100 h-screen">
+       {/* Specialty Filters */}
+  <div className="flex flex-wrap gap-2 justify-center mb-6">
+    {specialties.map((specialty) => (
+      <button
+        key={specialty.id}
+        onClick={() => setSelectedSpecialty(specialty.id)}
+        className={`px-4 py-2 border rounded-lg text-sm ${
+          selectedSpecialty === specialty.id
+            ? "bg-blue-600 text-white"
+            : "bg-white text-blue-600"
+        } hover:bg-blue-500 hover:text-white transition`}
+      >
+        {specialty.name}
+      </button>
+    ))}
+  </div>
 
-      {/* Physio Listings */}
-      {selectedSpecialty && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredPhysios.map((physio, index) => (
-            <div
-              key={index}
-              className="border p-4 rounded-lg shadow-lg hover:shadow-xl transition"
-            >
-              <h3 className="text-xl font-semibold">{physio.name}</h3>
-              <p>{physio.location}</p>
-              <div className="flex items-center">
-                <span className="text-yellow-400">{'★'.repeat(Math.round(physio.rating))}</span>
-                <span className="ml-2">{physio.rating}</span>
-              </div>
-              <p className="mt-2 text-gray-600">{physio.bio}</p>
-              <button className="mt-2 text-blue-600 hover:underline">View Profile</button>
-            </div>
-          ))}
+
+     {/* Physio Listings */}
+  {selectedSpecialty && (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {filteredPhysios.map((physio, index) => (
+        <div
+          key={index}
+          className="border p-4 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <h3 className="text-xl font-semibold">{physio.name}</h3>
+          <p>{physio.location}</p>
+          <div className="flex items-center">
+            <span className="text-yellow-400">{'★'.repeat(Math.round(physio.rating))}</span>
+            <span className="ml-2">{physio.rating}</span>
+          </div>
+          <p className="mt-2 text-gray-600">{physio.bio}</p>
+          <button className="mt-2 text-blue-600 hover:underline">View Profile</button>
         </div>
-      )}
+      ))}
+    </div>
+  )}
+
 
       {/* No results message */}
       {!selectedSpecialty && (
